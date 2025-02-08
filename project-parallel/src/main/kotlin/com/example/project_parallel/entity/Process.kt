@@ -10,7 +10,7 @@ data class Process(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
     val name: String,
-    val estimatedTime: Long,
+    val command: String,
     val parallel: Boolean,
     val tasks: Int,
     var status: String = "PENDING",
